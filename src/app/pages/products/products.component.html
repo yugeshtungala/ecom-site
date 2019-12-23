@@ -1,0 +1,21 @@
+<div class="bg-dark">
+<div class="container">
+    <div class="row ">
+    
+
+<div class="col-md-4 col-lg-4 col-xl-3 col-12  col-sm-6 col-xs-12  " *ngFor="let product of allproducts ">
+<div class="card d-block m-5  mx-auto  text-center " 
+ >
+    <img src="{{product.image}}" class="p-3" alt="...">
+    <div class="card-body">
+      <h5 class="card-title text-danger">{{product.name}}</h5>
+      <h5 class="card-title text-primary">&#8377;{{product.price}}</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <button class="btn btn-primary" (click)="addtocart(product)" >Add to cart</button>
+    </div>
+  </div>
+</div>
+  </div>
+  </div>
+</div>
+  
