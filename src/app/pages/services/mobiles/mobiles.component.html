@@ -1,0 +1,20 @@
+<div class="container">
+    <div class="row">
+        <div class="col-3">
+          
+            <div class="card" *ngFor="let all of allmobiles" style="width: 18rem;">
+                <img src="{{all.image}}" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">{{all.name}}</h5>
+                  <p class="card-text">{{all.price}}</p>
+                  <a routerLink="/services/mobiles/{{all.name}}" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+             
+        </div>
+   
+        <div class="col-9">
+            <h1>{{specs}}</h1>
+        </div>
+    </div>
+</div>

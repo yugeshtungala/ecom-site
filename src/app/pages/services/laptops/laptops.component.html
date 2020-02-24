@@ -1,0 +1,20 @@
+<div class="container">
+    <div class="row">
+        <div class="col-6" style="width: 300px;height: 500px; overflow: scroll;">
+          
+            <div class="card" *ngFor="let all of alllaptops" style="width: 18rem;">
+                <img src="{{all.image}}" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">{{all.name}}</h5>
+                  <p class="card-text">{{all.price}}</p>
+                  <a routerLink="/services/laptops/{{all.name}}" class="btn btn-primary">Details</a>
+                </div>
+              </div>
+             
+        </div>
+   
+        <div class="col-6 text-center">
+            <h1 class="ml-5">{{spec}}</h1>
+        </div>
+    </div>
+</div>

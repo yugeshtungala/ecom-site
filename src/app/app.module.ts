@@ -7,6 +7,10 @@ import { HomeComponent } from './pages/home/home.component';
 import { AboutComponent } from './pages/about/about.component';
 import { ProductsComponent } from './pages/products/products.component';
 import { CartComponent } from './pages/cart/cart.component';
+import { ServicesComponent } from './pages/services/services.component';
+import { LaptopsComponent } from './pages/services/laptops/laptops.component';
+import { MobilesComponent } from './pages/services/mobiles/mobiles.component';
+import { TelivisionComponent } from './pages/services/telivision/telivision.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +18,11 @@ import { CartComponent } from './pages/cart/cart.component';
     HomeComponent,
     AboutComponent,
     ProductsComponent,
-    CartComponent
+    CartComponent,
+    ServicesComponent,
+    LaptopsComponent,
+    MobilesComponent,
+    TelivisionComponent
   ],
   imports: [
     BrowserModule,
